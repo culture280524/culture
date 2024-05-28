@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-cl_$r9(ohj7_oed=lo*#fj*@_$^t&kvwk3cnm!tjx%)c+8!e8$
 DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'culture.onrender.com',]
+ALLOWED_HOSTS = ['127.0.0.1', 'culture-qc2o.onrender.com',]
 
 # Application definition
 
@@ -96,23 +96,23 @@ DATABASES = {
     #    'NAME': BASE_DIR / 'db.sqlite3',
     #}
     
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'culture',
-        'USER' : 'customer',
-        'PASSWORD' : 'customer',
-        'HOST' : '127.0.0.1',
-        'PORT' : '5432',
-    }
-
     #'default': {
-	   # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-	   # 'NAME': 'shop_wbrj',
-	   # 'USER' : 'shop_admin',
-	   # 'PASSWORD' : 'JWGBRPsATYhEYu1yv5gYdfYA475gBH2L',
-	   # 'HOST' : 'dpg-cp8kgm7109ks739sk490-a.frankfurt-postgres.render.com',
-	   # 'PORT' : '5432',
+    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #    'NAME': 'culture',
+    #    'USER' : 'customer',
+    #    'PASSWORD' : 'customer',
+    #    'HOST' : '127.0.0.1',
+    #    'PORT' : '5432',
     #}
+
+    'default': {
+	    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+	    'NAME': 'culture',
+	    'USER' : 'culture_admin',
+	    'PASSWORD' : 'N38RbvQcMibSBEkBuPc5SHjtCbumTWdE',
+	    'HOST' : 'dpg-cpb142ed3nmc73bdoasg-a.frankfurt-postgres.render.com',
+	    'PORT' : '5432',
+    }
 
 
 }
